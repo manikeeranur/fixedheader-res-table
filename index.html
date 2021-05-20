@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .custom-table-responsive {
+      height: 400px;
+      overflow: hidden;
+    }
+    .custom-table-responsive:hover {
+      overflow: auto;
+    }
+    .custom-table-responsive th {
+      position: sticky;
+      top: 0;
+      background-color: black;
+      color: white;
+    }
+    @media screen and (min-width: 992px) {
+      div.custom-table-responsive::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      div.custom-table-responsive::-webkit-scrollbar-track {
+        background-color: grey;
+      }
+      div.custom-table-responsive::-webkit-scrollbar-thumb {
+        background-color: rgb(5, 153, 252);
+        border-radius: 20px;
+      }
+    }
+  </style>
+  <body>
+    <!-- <nav class="navbar col-lg-2 navbar-expand-lg navbar-light bg-light sticky-top">
+     
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="list-unstyled mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <!-- for some reason the table shrinks by 1px when the header becomes sticky -->
+
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-body p-0 table-responsive custom-table-responsive">
+          <table class="table table-bordered text-nowrap text-center">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Rating</th>
+                <th>Title</th>
+                <th>Votes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AAA 1</td>
+                <td>9.2</td>
+                <td>The Shawshank Redemption (1994)</td>
+                <td>861105</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>9.2</td>
+                <td>The Godfather (1972)</td>
+                <td>627485</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>9</td>
+                <td>The Godfather: Part II (1974)</td>
+                <td>401790</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>8.9</td>
+                <td>Pulp Fiction (1994)</td>
+                <td>671833</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>8.9</td>
+                <td>The Good, the Bad and the Ugly (1966)</td>
+                <td>264853</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>8.9</td>
+                <td>12 Angry Men (1957)</td>
+                <td>212143</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8.9</td>
+                <td>Schindler's List (1993)</td>
+                <td>446746</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>8.9</td>
+                <td>The Dark Knight (2008)</td>
+                <td>841654</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>8.8</td>
+                <td>The Lord of the Rings: The Return of the King (2003)</td>
+                <td>610061</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>8.8</td>
+                <td>Fight Club (1999)</td>
+                <td>658420</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>8.8</td>
+                <td>Star Wars: Episode V - The Empire Strikes Back (1980)</td>
+                <td>432041</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>8.8</td>
+                <td>One Flew Over the Cuckoo's Nest (1975)</td>
+                <td>362301</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>8.8</td>
+                <td>The Lord of the Rings: The Fellowship of the Ring (2001)</td>
+                <td>633693</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>8.7</td>
+                <td>Inception (2010)</td>
+                <td>659478</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>8.7</td>
+                <td>Goodfellas (1990)</td>
+                <td>380476</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>8.7</td>
+                <td>Star Wars: Episode IV - A New Hope (1977)</td>
+                <td>485053</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>8.7</td>
+                <td>Seven Samurai (1954)</td>
+                <td>139125</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>8.7</td>
+                <td>The Matrix (1999)</td>
+                <td>629651</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>8.7</td>
+                <td>Forrest Gump (1994)</td>
+                <td>559889</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>8.7</td>
+                <td>City of God (2002)</td>
+                <td>283994</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>8.7</td>
+                <td>The Lord of the Rings: The Two Towers (2002)</td>
+                <td>547013</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>8.7</td>
+                <td>Once Upon a Time in the West (1968)</td>
+                <td>120976</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>8.6</td>
+                <td>Se7en (1995)</td>
+                <td>502288</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>8.6</td>
+                <td>The Silence of the Lambs (1991)</td>
+                <td>421230</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>8.6</td>
+                <td>Casablanca (1942)</td>
+                <td>238344</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>8.6</td>
+                <td>Raiders of the Lost Ark (1981)</td>
+                <td>371376</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>8.6</td>
+                <td>The Usual Suspects (1995)</td>
+                <td>404348</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>8.6</td>
+                <td>Rear Window (1954)</td>
+                <td>178813</td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>8.6</td>
+                <td>Psycho (1960)</td>
+                <td>222660</td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>8.6</td>
+                <td>It's a Wonderful Life (1946)</td>
+                <td>151260</td>
+              </tr>
+              <tr>
+                <td>31</td>
+                <td>8.6</td>
+                <td>Leon (1994)</td>
+                <td>367743</td>
+              </tr>
+              <tr>
+                <td>32</td>
+                <td>8.6</td>
+                <td>The Dark Knight Rises (2012)</td>
+                <td>437140</td>
+              </tr>
+              <tr>
+                <td>33</td>
+                <td>8.6</td>
+                <td>Sunset Boulevard (1950)</td>
+                <td>81122</td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td>8.5</td>
+                <td>Memento (2000)</td>
+                <td>459376</td>
+              </tr>
+              <tr>
+                <td>35</td>
+                <td>8.5</td>
+                <td>American History X (1998)</td>
+                <td>397668</td>
+              </tr>
+              <tr>
+                <td>36</td>
+                <td>8.5</td>
+                <td>Apocalypse Now (1979)</td>
+                <td>259211</td>
+              </tr>
+              <tr>
+                <td>37</td>
+                <td>8.5</td>
+                <td>Terminator 2: Judgment Day (1991)</td>
+                <td>396642</td>
+              </tr>
+              <tr>
+                <td>38</td>
+                <td>8.5</td>
+                <td>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)</td>
+                <td>216117</td>
+              </tr>
+              <tr>
+                <td>39</td>
+                <td>8.5</td>
+                <td>Saving Private Ryan (1998)</td>
+                <td>445613</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>8.5</td>
+                <td>Alien (1979)</td>
+                <td>297275</td>
+              </tr>
+              <tr>
+                <td>41</td>
+                <td>8.5</td>
+                <td>North by Northwest (1959)</td>
+                <td>131720</td>
+              </tr>
+              <tr>
+                <td>42</td>
+                <td>8.5</td>
+                <td>City Lights (1931)</td>
+                <td>50504</td>
+              </tr>
+              <tr>
+                <td>43</td>
+                <td>8.5</td>
+                <td>Spirited Away (2001)</td>
+                <td>192091</td>
+              </tr>
+              <tr>
+                <td>44</td>
+                <td>8.5</td>
+                <td>Citizen Kane (1941)</td>
+                <td>188738</td>
+              </tr>
+              <tr>
+                <td>45</td>
+                <td>8.5</td>
+                <td>Modern Times (1936)</td>
+                <td>63452</td>
+              </tr>
+              <tr>
+                <td>46</td>
+                <td>8.5</td>
+                <td>The Shining (1980)</td>
+                <td>307042</td>
+              </tr>
+              <tr>
+                <td>47</td>
+                <td>8.5</td>
+                <td>Vertigo (1958)</td>
+                <td>135990</td>
+              </tr>
+              <tr>
+                <td>48</td>
+                <td>8.5</td>
+                <td>American Beauty (1999)</td>
+                <td>460715</td>
+              </tr>
+              <tr>
+                <td>49</td>
+                <td>8.5</td>
+                <td>Taxi Driver (1976)</td>
+                <td>264504</td>
+              </tr>
+              <tr>
+                <td>50</td>
+                <td>8.5</td>
+                <td>Back to the Future (1985)</td>
+                <td>348627</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
